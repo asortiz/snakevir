@@ -562,7 +562,7 @@ rule get_nr_lineage_from_taxids:
 
 	params:
 		getr=scriptdir+"get_rank.py",
-		com=scriptdir+"complet_taxo_dic_v3.py",
+		com=scriptdir+"complet_taxo_dic.py",
 		pickle_shi=scriptdir+"correc_taxo.pickle",
 		pickle_cust=scriptdir+"custom_taxo.pickle"
 	shell:
@@ -620,7 +620,7 @@ rule complete_taxo:
 
 	params:
 		script_mult =scriptdir+"multihit.py",
-		script_compt =scriptdir+"complet_taxo_dic_v3.py",
+		script_compt =scriptdir+"complet_taxo_dic.py",
 		pickle_shi=scriptdir+"correc_taxo.pickle",
 		pickle_cust=scriptdir+"custom_taxo.pickle"
 	shell:
